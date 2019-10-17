@@ -15,4 +15,10 @@ jobs:
     steps:
       - name: Step B1
         run: sleep 5 && echo 'B1'
-
+  branch-c:
+    runs-on: ubuntu-latest
+    needs: [branch-a, branch-b]
+    name: Joining branch
+    steps:
+      - name: Joining A & B
+        run: echo I am done!
