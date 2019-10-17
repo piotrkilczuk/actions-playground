@@ -1,0 +1,11 @@
+name: Just a test
+
+on: [push]
+
+jobs:
+  branch-a:
+    runs-on: ubuntu-latest
+    name: Branch A
+    steps:
+      - name: Step A1
+        run: echo 'A1'
