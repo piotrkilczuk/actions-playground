@@ -8,4 +8,11 @@ jobs:
     name: Branch A
     steps:
       - name: Step A1
-        run: echo 'A1'
+        run: sleep 10 && echo 'A1'
+  branch-b:
+    runs-on: ubuntu-latest
+    name: Branch B
+    steps:
+      - name: Step B1
+        run: sleep 5 && echo 'B1'
+
